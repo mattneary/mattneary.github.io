@@ -1,31 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <title>Matt Neary by mattneary</title>
-  </head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  </head>
   <body>
 
-    <header>
-      <div class="container">
+      <header>
         <h1>Matt Neary</h1>
-        <h2>Web + FP + iOS</h2>
+        <p>Web + FP + iOS</p>
+      </header>
 
-        <section id="downloads">
-          <a href="https://github.com/mattneary" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <div id="banner">
+        <span id="logo"></span>
 
-    <div class="container">
-      <section id="main_content">
+        <a href="https://github.com/mattneary" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <h2>
 <a name="about-me" class="anchor" href="#about-me"><span class="octicon octicon-link"></span></a>About Me</h2>
 
@@ -55,20 +61,21 @@ I like JavaScript and Ruby for web development, Haskell for interpreters, and Li
 
 <ul>
 <li>Lampas</li>
-<li>Schript</li>
-<li>René APL</li>
+<li><a href="http://mattneary.github.io/Schript/">Schript</a></li>
+<li>
+<a href="http://mattneary.github.io/Rene/">René</a> APL</li>
 <li>LetterEleven</li>
 </ul><h3>
 <a name="tools" class="anchor" href="#tools"><span class="octicon octicon-link"></span></a>Tools</h3>
 
 <ul>
-<li>TeXode</li>
-<li>Quizzical</li>
+<li><a href="http://mattneary.github.io/TeXode/">TeXode</a></li>
+<li><a href="http://mattneary.github.io/Quizzical/">Quizzical</a></li>
 </ul><h3>
 <a name="web-platforms" class="anchor" href="#web-platforms"><span class="octicon octicon-link"></span></a>Web Platforms</h3>
 
 <ul>
-<li>FlightControl</li>
+<li><a href="http://mattneary.github.io/FlightControl/">FlightControl</a></li>
 <li>LiftOff</li>
 </ul><h3>
 <a name="simulators" class="anchor" href="#simulators"><span class="octicon octicon-link"></span></a>Simulators</h3>
@@ -76,18 +83,21 @@ I like JavaScript and Ruby for web development, Haskell for interpreters, and Li
 <ul>
 <li>Turing</li>
 <li>GenerationX</li>
-<li>Artillery</li>
-<li>Hypercube</li>
+<li><a href="http://mattneary.github.io/Artillery/">Artillery</a></li>
+<li><a href="http://mattneary.github.io/Hypercube/">Hypercube</a></li>
 </ul><h3>
 <a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h3>
 
 <ul>
-<li>lemonad</li>
-<li>binary.js</li>
+<li>lemonad - significant feature additions</li>
+<li>binary.js - a port to iOS</li>
 </ul>
       </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
