@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{attrib}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\begin{document}
+
+\begin{titlepage}
+\title{On the Declarative Paradigm}
+\author{Matt Neary}
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+\thispagestyle{empty}
+\end{titlepage}
+
+\section{Introduction to Declarative Programs}
+In the design of formal programs, there are two general approaches. Some programs
+are considered \emph{imperative}, and others \emph{declarative}. The distinction
+between the two is the subject matter of this article. 
+
+You will often hear the declarative paradigm described as concerned with
+``what, not how.'' This is usually interpreted to mean that declarative programs
+are unconcerned with the details of implementation. This concept, however, can
+be better related as a definition of relationships rather than a means of
+construction. That may not seem to clarify the matter, but throughout this
+article we will aim to display this aspect of declarative programming quite
+clearly.
+
+Our language of choice is Haskell, the epitome of functional, declarative 
+programming and, in general, a very powerful and quality language. We start with
+a trivial example of how this aspect of declarative programming takes form.
+
+\begin{verbatim}
+fact 0 = 1
+fact n = n * (fact (n - 1))
+\end{verbatim}
+
+Of course, the above is a definition of a factorial function. You will notice
+its striking similarity to an inductive defintion in Mathematics. This similarity
+is due to the fact that an inductive defintion is in itself a very declarative
+idea. An inductive definition describes an initial case and the relationship of
+subsequent cases in terms of their predecessors.
+
+With this idea of relationships over construction in mind, we will now dive
+into the viability of this approach in a building of complex structures and
+as an approach to programming.
+
+\section{Axioms and Building}
+
+Any assurance of consistency in our Mathematical systems is dependent upon the
+Axiomatic Method. This method assures that assumptions are minimized, yet given a 
+few means of extrapolation from one idea to another, we remain able to achive
+complex truths.
+
+The whole of Mathematics has been given rigorous foundation in this idea, through
+many efforts. We will focus on the Zermelo–Fraenkel set theory with the Axiom of 
+Choice (ZFC), a specific foundation of Mathematics. ZFC begins with a series of
+Axioms from which all of Mathematics can be derived. For example, the Axiom of
+Pair states that for all values $A$ and $B$, there exists a set such $P$ that a 
+value is in $P$ if and only if it is either equal to $A$ or equal to $B$.
+
+As you can tell, the Axiom of Pair is a rule for construction. Hence, by our
+earlier distinction between imperative and declarative programs, we can conclude
+that is an imperative construct.
+
+\section{Equivalency}
+
+\end{document}
