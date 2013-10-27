@@ -1,0 +1,119 @@
+body {
+  font-family: 'Helvetica Neue';
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:before {
+  content: '♦';
+  font-size: 15px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.block {
+  width: 100%;
+  position: relative;
+  background: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.block h2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 60px;
+  margin-top: 0;
+  padding-left: 450px;
+  font-size: 40px;
+}
+.block.right h2 {
+  padding-left: 60px;
+  padding-right: 450px;
+}
+.block p {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 60px;
+  padding-left: 450px;
+  font-size: 40px;
+  text-align: justify;
+  font-size: 26px;
+}
+.block.right p {
+  padding-left: 60px;
+  padding-right: 450px;
+}
+.refs {
+  padding: 100px;
+}
+#apps_portfolio {
+  height: 160px;
+}
+#writing {
+  background: #ff7578;
+}
+#language {
+  background: #ff7578;
+}
+.refs img {
+  height: 160px;
+  float: left;
+  margin-right: 20px;
+}
+#welcome {
+  color: white;
+  background: #47edff;
+  font-family: 'Pacifico';
+  box-sizing: border-box;
+  padding: 60px;
+}
+#welcome h1 {
+  font-size: 102px;
+}
+.name {
+  font-family: 'Helvetica Neue';
+  font-size: 1.2em;
+}
+#phone {
+  background: url("imgs/iphone.png");
+  height: 600px;
+  width: 320px;
+  background-size: 100%;
+  position: absolute;
+  left: 20px;
+  bottom: 100px;
+}
+#lang {
+  background: url("imgs/HM.png");
+  height: 243px;
+  width: 331px;
+  background-size: 100%;
+  position: absolute;
+  right: 40px;
+  bottom: 200px;
+}
+#github {
+  background: url("imgs/opensource.png");
+  height: 595px;
+  width: 362px;
+  background-size: 100%;
+  position: absolute;
+  left: 20px;
+  bottom: 100px;
+}
+#cube {
+  height: 297px;
+  width: 288px;
+  background-size: 100%;
+  position: absolute;
+  right: 40px;
+  bottom: 200px;
+  background: url("imgs/rubiks.png");
+}
+#footer {
+  height: 200px;
+  background: #47edff;
+}

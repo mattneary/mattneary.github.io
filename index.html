@@ -1,114 +1,84 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Matt Neary by mattneary</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-      <div id="header"></div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Matt Neary</h1>
-          <p>Web + FP + iOS</p>
-          <hr>
-          <span class="credits left">Find <a href="http://mattneary.com">mattneary</a> on <a href="https://github.com/mattneary">Github</a>.</span>
-          <span class="credits right">Hosted on GitHub Pages</span>
-        </div>
-
-        <h2>
-<a name="about-me" class="anchor" href="#about-me"><span class="octicon octicon-link"></span></a>About Me</h2>
-
-<p>I am a full-stack web developer, iOS app developer, and Functional Programmer. 
-I like JavaScript and Ruby for web development, Haskell for interpreters, and Lisp as a scripting language. </p>
-
-<p>I am the sole-proprieter of Lambda Labs; under this brand I have helped to make websites garnering tens of thousands of daily views, apps with thousands of users, and spun out various businesses. </p>
-
-<p>My articles are displayed at Lingua Lambda, with a similar book titled "Tarpits &amp; Abstraction" in the works. I have created many writing, testing &amp; algorithmic tools, which are available open-source.</p>
-
-<h2>
-<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Articles</h2>
-
-<ul>
-<li><a href="articles/rubik.pdf">Deriving Macros for the Solving of a Rubik's Cube</a> (<a href="/articles/rubik.tex">TeX</a>)</li>
-<li><a href="articles/bootstrap.pdf">Interpretation and Bootstrapping for Novices</a> (<a href="/articles/bootstrap.tex">TeX</a>)</li>
-</ul>
-
-
-<h2>
-<a name="my-work" class="anchor" href="#my-work"><span class="octicon octicon-link"></span></a>My Work</h2>
-
-<h3>
-<a name="apps--web-apps" class="anchor" href="#apps--web-apps"><span class="octicon octicon-link"></span></a>Apps &amp; Web Apps</h3>
-
-<ul>
-<li>Mementos</li>
-<li>Bonds</li>
-<li>Etymology</li>
-<li>Curves</li>
-<li>CloudBoard</li>
-<li>Mileage</li>
-<li>OmniGame</li>
-<li>Imgurious</li>
-</ul><h3>
-<a name="languages" class="anchor" href="#languages"><span class="octicon octicon-link"></span></a>Languages</h3>
-
-<ul>
-<li><a href="http://linguae.github.io/Lampas">Lampas</a></li>
-<li><a href="http://mattneary.github.io/Schript/">Schript</a></li>
-<li>
-<a href="http://mattneary.github.io/Rene/">René</a> APL</li>
-<li>LetterEleven</li>
-</ul><h3>
-<a name="tools" class="anchor" href="#tools"><span class="octicon octicon-link"></span></a>Tools</h3>
-
-<ul>
-<li><a href="http://mattneary.github.io/TeXode/">TeXode</a></li>
-<li><a href="http://mattneary.github.io/Quizzical/">Quizzical</a></li>
-<li><a href="http://mattneary.github.io/zTest/">zTest</a></li>
-</ul><h3>
-<a name="web-platforms" class="anchor" href="#web-platforms"><span class="octicon octicon-link"></span></a>Web Platforms</h3>
-
-<ul>
-<li><a href="http://mattneary.github.io/FlightControl/">FlightControl</a></li>
-<li>LiftOff</li>
-<li>Edifice.js</li>
-</ul><h3>
-<a name="simulators" class="anchor" href="#simulators"><span class="octicon octicon-link"></span></a>Simulators</h3>
-
-<ul>
-<li>Turing</li>
-<li>GenerationX</li>
-<li><a href="http://mattneary.github.io/Artillery/">Artillery</a></li>
-<li><a href="http://mattneary.github.io/Hypercube/">Hypercube</a></li>
-</ul>
-
-<h3>
-<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h3>
-
-<ul>
-<li>lemonad - significant feature additions</li>
-<li>binary.js - a port to iOS</li>
-</ul>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+<head>
+  <title>Matt Neary</title>
+  <meta charset="utf8">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="lib/stellar.js"></script>
+</head>
+<body>
+  <div id="welcome" class="block">
+    <h1>Call me <span class="name">Matt</span>...</h1>
+  </div>
+  <div id="apps" class="block">
+    <h2>I Make iOS and Android Apps</h2>
+    <div data-stellar-ratio="2" id="phone"></div>
+    <p>I made my first app in 2011, an app and webservice for copy-and-paste 
+       storage of text, images, and links named <a href="https://itunes.apple.com/us/app/cloudboard-copy-paste-sync/id458006081?mt=8">CloudBoard</a>.
+       Then I started making education tools like <a href="https://itunes.apple.com/us/app/curves-grapher-graphing-calculator/id492317052?mt=8">Curves</a> and
+       <a href="https://itunes.apple.com/us/app/bonds.io-chemical-bond-drawer/id641785626?mt=8">Bonds</a>. Since then, I have made various apps for clients,
+       such as a social network and a platform for trade organizations.</p>
+  </div>
+  <!--
+  <div id="apps_portfolio" class="block refs">
+    <img src="cloud-board-large.png">
+    <img src="calculator-512.psd">
+    <img src="bonds-large-icon.png">
+  </div>
+  -->
+  <div id="language" class="block right">
+    <h2>I Really Like Languages</h2>
+    <div data-stellar-ratio="2" id="lang"></div>
+    <p>After exploring a multitude of languages from various paradigms, I decided
+       that I would like to design my own. I began the process by creating a
+       <a href="http://github.com/mattneary/LetterEleven">Lambda Calculus Interpreter</a>,
+       and then moved on to make my own Lisp, 
+       <a href="http://mattneary.github.io/Lampas/">Lampas</a>. Next I made a JavaScript
+       dialect called 
+       <a href="http://mattneary.github.io/Script/">Schript</a> that is a bit like Lisp. 
+       More recently, I wrote a book titled 
+       <a href="http://github.com/mattneary/Tarpits-Abstraction">Tarpits & Abstraction</a> 
+       on interpretation, compilation, and related ideas.</p>
+  </div>
+  <div id="opensource" class="block">
+    <h2>I Love Open-Source</h2>
+    <div data-stellar-ratio="1.7" id="github"></div>
+    <p>I Open-Source all of my projects, either as part of 
+       <a href="http://lambdaltd.com">Lambda Labs</a>, on my personal 
+       <a href="http://github.com/mattneary">Github Page</a>,
+       or on my team's <a href="http://github.com/Honors">Github page</a>. These 
+       projects include lots of tools: 
+       <a href="http://mattneary.github.io/Quizzical">Quizzical</a> is an API test-suite, 
+       <a href="http://mattneary.github.io/zTest">zTest</a>
+       does statistical performance comparison, 
+       <a href="http://mattneary.github.io/TeXode">TeXode</a> helps in
+       type-setting books, and 
+       <a href="http://mattneary.github.io/Edifice.js">Edifice.js</a> and 
+       <a href="http://mattneary.github.io/FlightControl">FlightControl</a> help in the 
+       building of server apps.</p>
+     <p>Additionally, I publish more theoretical endeavors, like 
+        <a href="http://github.com/AnInterpreter">AnInterpreter</a> or 
+	<a href="http://mattneary.github.io/Typical">Typical</a>, a formal type-system
+	for JavaScript. I contribute heavily to the projects of others, such as
+	<a href="http://github.com/fogus/lemonad">Lemonad</a>, 
+	<a href="http://github.com/Poincare/Birbal">Birbal</a>, and 
+	<a href="http://github.com/Reflejo/jquery-countdown">jquery-countdown</a>. 
+	I <a href="http://github.com/mattneary/binary-ios">ported</a> Binary.js
+	to iOS as well.</p>
+  </div>
+  <div id="writing" class="block right">
+    <h2>I Write About My Projects</h2>
+    <div data-stellar-ratio="2" id="cube"></div>
+    <p>I like doing formal research, perhaps in <a href="articles/rubik.pdf">The Derivation of Rubik's 
+       Cube Methodoloy</a>, Formal Verification of a Type-System, or 
+       <a href="articles/bootstrap.pdf">Proving an Interpreter Correct</a>. I write 
+       essays when I get the chance, and maintain 
+       <a href="http://lingualambda.com">Lingua Lambda</a>; my book
+       is quite similar to this publication.</p>
+  </div>
+  <div id="footer" class="block">
+  </div>
+  <script>
+    $.stellar();
+  </script>
+</body>
