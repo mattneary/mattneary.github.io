@@ -155,4 +155,10 @@ a:hover {
   #welcome h1 .dots {
     display: none;
   }
+  a:before {
+    content: '';
+  }
+  a {
+    text-decoration: underline;
+  }
 }
