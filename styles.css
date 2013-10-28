@@ -72,10 +72,11 @@ a:hover {
   color: #333;
   font-family: 'Pacifico';
   box-sizing: border-box;
-  padding: 60px;
+  padding: 10px 60px;
 }
 #welcome h1 {
   font-size: 102px;
+  margin: 0;
 }
 .name {
   font-family: 'Helvetica Neue';
@@ -88,7 +89,7 @@ a:hover {
   background-size: 100%;
   position: absolute;
   left: 20px;
-  bottom: 100px;
+  bottom: 0px;
 }
 #lang {
   background: url("imgs/HM.png");
