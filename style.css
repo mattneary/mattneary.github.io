@@ -67,3 +67,46 @@ h1 {
   float: left;
   color: white;
 }
+@media (max-width: 899px) {
+  #header > h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    display: block;
+  }
+  #header .about {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px 60px;
+  }
+  .wrapper, #portfolio, #products {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #products {
+    border-top: 1px dashed #333;
+  }
+  .item {
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    width: 100%;
+  }
+  #header .about {
+    padding: 0px 10px;
+  }
+  #header > h1 {
+    margin: 0;
+  }
+  #header .act {
+    display: none;
+  }
+
+}
