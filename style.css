@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue';
+  color: #333;
+}
+#wrapper {
+  width: 900px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: #d6000b;
+}
+h1 {
+  font-size: 35px;
+  font-family: 'Helvetica Neue';
+}
+.name {
+  font-family: 'Pacifico', script;  
+}
+#header {
+  width: 100%;
+  border-top: 20px solid #d6000b;
+  float: left;
+  border-bottom: 1px dashed #666;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#header h1 { 
+  float: left;
+}
+#header .about {
+  float: right;
+}
+#header .about {
+  width: 400px;
+  padding: 20px;
+}
+#portfolio, #products {
+  width: 100%;;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 0;
+  box-sizing: border-box;
+  float: left;
+}
+.item {
+  width: 273px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 100px;
+  text-align: justify;
+}
+.item h3 {
+  margin: 0;
+  padding: 0;
+}
+.item p {
+  padding: 0;
+  margin: 0;
+}
+#footer {
+  background: #333;
+  width: 100%;
+  height: 100px;
+  float: left;
+}

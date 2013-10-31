@@ -1,89 +1,89 @@
-<head>
-  <title>Matt Neary</title>
-  <meta charset="utf8">
-  <meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="styles.css" />
-  <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">  
-  <script src="lib/jquery.js"></script>
-  <script src="lib/stellar.js"></script>
-</head>
-<body>
-  <div id="welcome" class="block">
-    <h1>I'm <span class="name">Matt Neary</span><span class="dots">:</span></h1>
-  </div>
-  <div id="apps" class="block">
-    <h2>I Make Mobile and Web Apps</h2>
-    <div data-stellar-ratio="2" id="phone"></div>
-    <p>I made my first app in 2011, an app and webservice for copy-and-paste 
-       storage of text, images, and links named <a href="https://itunes.apple.com/us/app/cloudboard-copy-paste-sync/id458006081?mt=8">CloudBoard</a>.
-       Then I started making education tools like <a href="https://itunes.apple.com/us/app/curves-grapher-graphing-calculator/id492317052?mt=8">Curves</a> and
-       <a href="https://itunes.apple.com/us/app/bonds.io-chemical-bond-drawer/id641785626?mt=8">Bonds</a>. Since then, I have made various iOS and Android apps for clients,
-       such as a social network and a platform for trade organizations.</p>
-    <p>In 2010, I made a game website, <a href="http://omniga.me">OmniGame</a>. At
-       one point it was attaining 10K daily views. I've also made various tools for the
-       web, such as a drag-and-drop file transferrer, SMS messaging from the web, 
-       or a handwriting chat client.</p>
-  </div>
-  <!--
-  <div id="apps_portfolio" class="block refs">
-    <img src="cloud-board-large.png">
-    <img src="calculator-512.psd">
-    <img src="bonds-large-icon.png">
-  </div>
-  -->
-  <div id="language" class="block right">
-    <h2>I Really Like Languages</h2>
-    <div data-stellar-ratio="2" id="lang"></div>
-    <p>After exploring a multitude of languages from various paradigms, I decided
-       that I would like to design my own. I began the process by creating a
-       <a href="http://github.com/mattneary/LetterEleven">Lambda Calculus Interpreter</a>,
-       and then moved on to make my own Lisp, 
-       <a href="http://mattneary.github.io/Lampas/">Lampas</a>. Next I made a JavaScript
-       dialect called 
-       <a href="http://mattneary.github.io/Script/">Schript</a> that is a bit like Lisp. 
-       More recently, I wrote a book titled 
-       <a href="http://github.com/mattneary/Tarpits-Abstraction">Tarpits & Abstraction</a> 
-       on interpretation, compilation, and related ideas.</p>
-  </div>
-  <div id="opensource" class="block">
-    <h2>I Love Open-Source</h2>
-    <div data-stellar-ratio="1.7" id="github"></div>
-    <p>I Open-Source all of my projects, either as part of 
-       <a href="http://lambdaltd.com">Lambda Labs</a>, on my personal 
-       <a href="http://github.com/mattneary">Github Page</a>,
-       or on my team's <a href="http://github.com/Honors">Github page</a>. These 
-       projects include lots of tools: 
-       <a href="http://mattneary.github.io/Quizzical">Quizzical</a> is an API test-suite, 
-       <a href="http://mattneary.github.io/zTest">zTest</a>
-       does statistical performance comparison, 
-       <a href="http://mattneary.github.io/TeXode">TeXode</a> helps in
-       type-setting books, and 
-       <a href="http://mattneary.github.io/Edifice.js">Edifice.js</a> and 
-       <a href="http://mattneary.github.io/FlightControl">FlightControl</a> help in the 
-        building of server apps.</p>
-     <p>Additionally, I publish more theoretical endeavors, like 
-        <a href="http://github.com/AnInterpreter">AnInterpreter</a> or 
-	<a href="http://mattneary.github.io/Typical">Typical</a>, a formal type-system
-	for JavaScript. I contribute heavily to the projects of others, such as
-	<a href="http://github.com/fogus/lemonad">Lemonad</a>, 
-	<a href="http://github.com/Poincare/Birbal">Birbal</a>, and 
-	<a href="http://github.com/Reflejo/jquery-countdown">jquery-countdown</a>. 
-	I <a href="http://github.com/mattneary/binary-ios">ported Binary.js</a>
-	to iOS as well.</p>
-  </div>
-  <div id="writing" class="block right">
-    <h2>I Write About My Projects</h2>
-    <div data-stellar-ratio="2" id="cube"></div>
-    <p>I like doing formal research, perhaps in <a href="articles/rubik.pdf">The Derivation of Rubik's 
-       Cube Methodoloy</a>, Formal Verification of a Type-System, or 
-       <a href="articles/bootstrap.pdf">Proving an Interpreter Correct</a>. I write 
-       essays when I get the chance, and maintain 
-       <a href="http://lingualambda.com">Lingua Lambda</a>; my book
-       is quite similar to this publication.</p>
-  </div>
-  <div id="footer" class="block">
-  </div>
-  <script>
-    $.stellar({ responsive: true, positionProperty: 'transform' });
-  </script>
-</body>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Matt Neary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+	<h1><span class="name">Matt Neary</span> make things.</h1>
+	<div class="about">
+	  <p>I am founder of & a developer at <a href="#">Lambda Labs Ltd.</a> in
+	     Columbus, OH. I write for <a href="#">Lingua Lambda</a> and post my
+	     code to <a href="#">Github</a>.</p>
+	</div>
+      </div>
+      <div id="portfolio">
+        <div class="item">
+	  <h3>Lampas</h2>
+	  <p>Scheme-like language written in Haskell, including 
+	     practical and extensible features.</p>
+	</div>
+        <div class="item">
+	  <h3>Typical</h2>
+	  <p>A formally verified type system for JavaScript based 
+	     on the Calculus of constructors.</p>
+	</div>
+        <div class="item">
+	  <h3>TeXode</h2>
+	  <p>Makes typesetting easy, rendering collections of Markdown
+	     files as LaTeX formatted books.</p>
+	</div>
+        <div class="item">
+	  <h3>Rene</h2>
+	  <p>A graph visualizer for the web utilizing an interpreter 
+	     of an APL dialect to evaluate input.</p>
+	</div>
+        <div class="item">
+	  <h3>zTest</h2>
+	  <p>Statistical performance testing for JavaScript.</p>
+	</div>
+        <div class="item">
+	  <h3>Quizzical</h2>
+	  <p>A test-suite and docs generator for JSON APIs built 
+	     around cURL.</p>
+	</div>
+        <div class="item">
+	  <h3>Binary iOS</h2>
+	  <p>A port of the Binary.js for socket transmission of binary
+	     data to iOS.</p>
+	</div>
+        <div class="item">
+	  <h3>Schript</h2>
+	  <p>A JavaScript dialect providing more uniform syntax and
+	     the ability to define macros.</p>
+	</div>
+      </div>
+      <div id="products">
+        <div class="item">
+	  <h3>Bonds.io</h2>
+	  <p>A chemical bond drawer for the web and for iOS.</p>
+	</div>
+        <div class="item">
+	  <h3>Mementos</h2>
+	  <p>An iPhone, Mac, and Web  app for the storage of images, 
+	     links, and text to the cloud.</p>
+	</div>
+        <div class="item">
+	  <h3>Curves</h2>
+	  <p>An iPad app for the graphing of mathematical functions
+	     on the plane.</p>
+	</div>
+        <div class="item">
+	  <h3>OmniGame</h2>
+	  <p>A flash game website at one point reaching 10K daily
+	     pageviews.</p>
+	</div>
+        <div class="item">
+	  <h3>Advocacy</h2>
+	  <p>A platform for trade organizations allowing them to
+	     notify their members of new legislature.</p>
+	</div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+  </body>
+</html>
