@@ -36,7 +36,7 @@ h1 {
   width: 350px;
   padding: 20px;
 }
-#portfolio, #products {
+#portfolio, #products, #articles {
   width: 100%;;
   box-sizing: border-box;
   padding: 20px;
@@ -81,15 +81,15 @@ h1 {
     box-sizing: border-box;
     padding: 10px 60px;
   }
-  .wrapper, #portfolio, #products {
+  .wrapper, #portfolio, #products, #articles {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  #portfolio, #products {
+  #portfolio, #products, #articles {
     padding-bottom: 20px;
   }
-  #products {
+  #products, #portfolio {
     border-top: 1px dashed #333;
   }
   .item {
