@@ -53,6 +53,9 @@ h1 {
   height: 100px;
   text-align: justify;
 }
+#articles .item {
+  height: 150px;
+}
 .item h3 {
   margin: 0;
   padding: 0;
