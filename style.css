@@ -7,6 +7,11 @@ body {
   width: 900px;
   margin: auto;
 }
+#footer .wrapper div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
 a {
   text-decoration: none;
   color: #d6000b;
@@ -122,6 +127,9 @@ h1 {
     margin: 0;
     box-sizing: border-box;
     padding: 20px;
+  }
+  #footer .wrapper {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
