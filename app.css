@@ -88,15 +88,21 @@ ul.links:last-child li:last-child:after {
 }
 
 li.writing   { background: #E80C01; }
-.writing h2  { color: #E80C01; border-bottom: 3px solid #E80C01; }
+.writing h2 { background: #E80C01;  color: white; }
+.writing:hover h2  { color: #E80C01; border-bottom: 3px solid #E80C01; }
 li.research  { background: #2C52A0; }
-.research h2 { color: #2C52A0;  border-bottom: 3px solid #2C52A0;}
+.research h2 { background: #2C52A0;  color: white;}
+.research:hover h2 { color: #2C52A0;  border-bottom: 3px solid #2C52A0;}
 li.dev       { background: #F24500; }
-.dev h2      { color: #F24500;  border-bottom: 3px solid #F24500;}
+.dev h2 { background: #F24500;  color: white;}
+.dev:hover h2      { color: #F24500;  border-bottom: 3px solid #F24500;}
 li.business  { background: #008C88; }
-.business h2 { color: #008C88;  border-bottom: 3px solid #008C88;}
+.business h2 { background: #008C88;  color: white;}
+.business:hover h2 { color: #008C88;  border-bottom: 3px solid #008C88;}
 li.art       { background: #46C764; }
-.art h2      { color: #46C764;  border-bottom: 3px solid #46C764;}
+.art h2 { background: #46C764;  color: white;}
+.art:hover h2      { color: #46C764;  border-bottom: 3px solid #46C764;}
+
 
 #projects {
   position: absolute;
@@ -117,10 +123,37 @@ li.art       { background: #46C764; }
 .project {
   width: 300px;
   margin-right: 6px;
+  margin-bottom: 6px;
 }
 .project h2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px 0;
+  color: white;
   margin: 0;
+  transition: padding ease 0.2s;
+}
+.project p {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.project:hover {
   padding: 0;
+}
+.project:hover h2 {
+  position: relative;
+  background: none;
+  padding: 0;
+}
+.project:hover p {
+  padding: 0;
+}
+.project {
+  padding-bottom: 42px;
 }
 .project h2 a {
   color: inherit;
