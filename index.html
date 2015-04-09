@@ -1,152 +1,145 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Matt Neary</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app.css" />
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1">
+    <title>Matt Neary</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div id="header">
-	<h1><span class="name">Matt Neary</span><span class="act"> makes things.</span></h1>
-	<div class="about">
-	  <p>I develop software of all types, with special focus on mobile and web apps. <b>Harvard '18</b>.</p>
-	  <p id="find-me-p">View my</p>
-	  <ul>
-	    <li><a href="http://github.com/mattneary">github</a></li>
-	    <li><a href="http://blog.mattneary.com">blog</a></li>
-	    <li><a href="/CV.pdf">CV</a></li>
-	  </ul>
-	  and
-	  <p id="contact-p">contact me by</p>
-	  <ul>
-	    <li><a href="tel:1-614-440-8217">phone</a></li>
-	    <li><a href="mailto:neary.matt@gmail.com">email</a></li>
-	  </ul>
-	</div>
+    <div id="me">
+      <header>
+        <span class="name">Matt Neary</span>
+        <div class="bio">
+          I'm a student exploring the world through projects.
+          <p id="find-me-p">View my</p>
+          <ul class="links">
+            <li><a href="http://github.com/mattneary">github</a></li>
+            <li><a href="http://blog.mattneary.com">blog</a></li>
+            <li><a href="/CV.pdf">CV</a></li>
+          </ul>
+          and
+          <p id="contact-p">contact me by</p>
+          <ul class="links">
+            <li><a href="tel:1-614-440-8217">phone</a></li>
+            <li><a href="mailto:neary.matt@gmail.com">email</a></li>
+          </ul>
+        </div>
+      </header>
+      <nav>
+        <span id="slider"></span>
+        <ul class="skills">
+          <li class="writing"><a href="#writing">Writing</a></li>
+          <li class="business"><a href="#business">Business</a></li>
+          <li class="dev"><a href="#dev">Code</a></li>
+          <li class="art"><a href="#art">Art</a></li>
+          <li class="research"><a href="#research">Research</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="projects">
+      <div class="project research">
+        <h2><a href="/Lampas">Lampas</a></h2>
+        <p>I designed and implemented a Scheme-like programming
+           langauge, optimizing for simplicity.</p>
       </div>
-      <div id="portfolio" class="section">
-	<h2>Projects</h2>
-        <div class="item">
-	  <h3><a href="/Lampas">Lampas</a></h3>
-	  <p>Scheme-like language written in Haskell, including 
-	     practical and extensible features.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Swiper">Swiper</a></h3>
-	  <p>A parser library for Apple's Swift, with a clean DSL
-	     and the power to parse arbitrary context-free languages.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Typical">Typical</a></h3>
-	  <p>A formally verified type system for JavaScript based 
-	     on the Calculus of constructors.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Quizzical">Quizzical</a></h3>
-	  <p>A test-suite and docs generator for JSON APIs built 
-	     around cURL.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Spectacle">Spectacle</a></h3>
-	  <p>An intelligent STL viewer for the web with shape recognition.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/TeXode">TeXode</a></h3>
-	  <p>Makes typesetting easy, rendering collections of Markdown
-	     files as LaTeX formatted books.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Rene">Rene</a></h3>
-	  <p>A graph visualizer for the web utilizing an interpreter 
-	     of an APL dialect to evaluate input.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/zTest">zTest</a></h3>
-	  <p>Statistical performance testing for JavaScript.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Schript">Schript</a></h3>
-	  <p>A JavaScript dialect providing more uniform syntax and
-	     the ability to define macros.</p>
-	</div>
+      <div class="project research">
+        <h2><a href="/Swiper">Swiper</a></h2>
+        <p>I made a domain-specific programming language for parsing formal grammars
+           within Swift, hoping to provide a more hands-on way to learn about languages.</p>
       </div>
-      <div id="products" class="section">
-	<h2>Products</h2>
-        <div class="item">
-	  <h3><a href="http://bonds.io">Bonds.io</a></h3>
-	  <p>A chemical bond drawer for the web and for iOS.</p>
-	</div>
-        <div class="item">
-	  <h3>Curves</h3>
-	  <p>An iPad app for the graphing of mathematical functions
-	     on the plane.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="https://itunes.apple.com/us/app/bhstudent/id763152364?mt=8">BHStudent/BHTeacher</a></h3>
-	  <p>iPad apps for students and teachers enabling file upload and
-	     new interactions with the Brainhoney platform.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="http://fastadvocate.com">fastAdvocate</a></h3>
-	  <p>A platform for trade organizations allowing them to
-	     notify their members of new legislature.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="http://surg.co">Surg.co</a></h3>
-	  <p>A person-to-person file transfer app consisting of
-	     drag and drop sharing over link-based channels.</p>
-	</div>
-        <div class="item">
-	  <h3>Quarantine</h3>
-	  <p>A proxy for schools which lets teachers switch off the
-	     internet access of their classes.</p>
-	</div>
+      <div class="project dev">
+        <h2><a href="/Typical">Typical</a></h2>
+        <p>I designed and implemented a type system for JavaScript to help
+           developers write bug-free code.</p>
       </div>
-      <div id="articles" class="section">
-	<h2>Articles</h2>
-        <div class="item">
-	  <h3><a href="/articles/rubik.pdf">Deriving Rubik's Cube Methodology</a></h3>
-	  <p>Some basic group theory was used in deriving
-	     "macros" for the effective manipulation of Rubik's cubes.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/articles/interpret.pdf">Verification of an Interpreter</a></h3>
-	  <p>A stack based language was designed and implemented in high school
-	     algebra and proven correct.</p>
-	</div>
-        <div class="item">
-	  <h3><a href="/Tarpits-Abstraction">Tarpits &amp; Abstraction</a></h3>
-	  <p>A book on abstraction of computation, from the design of Lambda
-	     Calculus to the simulation, interpretation, and self-hosting of a Lisp.</p>
-	</div>
+      <div class="project dev">
+        <h2><a href="/Quizzical">Quizzical</a></h2>
+        <p>I built tools for developers which would allow them to write
+           tests and documentation for their software all in one place, and in
+           the same languages which they use everyday.</p>
+      </div>
+      <div class="project art">
+        <h2><a href="/Spectacle">Spectacle</a></h2>
+        <p>I designed and implemented CAD software for the web with
+           the goal of making interaction with 3d objects easier.</p>
+      </div>
+      <div class="project dev">
+        <h2><a href="/TeXode">TeXode</a></h2>
+        <p>I designed and built software to help authors generate fully typeset
+           books from regular text documents.</p>
+      </div>
+      <div class="project research">
+        <h2><a href="/Rene">Rene</a></h2>
+        <p>I rethought the graphing calculator, basing its use on a very terse
+           and powerful programming language: APL.</p>
+      </div>
+      <div class="project dev">
+        <h2><a href="/zTest">zTest</a></h2>
+        <p>I made a tool for JavaScript programmers which allows them to
+           assess whether the performance difference between two procedures
+           is statistically significant.</p>
+      </div>
+      <div class="project research">
+        <h2><a href="/Schript">Schript</a></h2>
+        <p>I redesigned JavaScript to allow for a different style of programming
+           by first streamlining the syntax and then providing macros.</p>
+      </div>
+      <div class="project art">
+        <h2><a href="http://bonds.io">Bonds.io</a></h2>
+        <p>I made an interactive drawer of chemical formulae which can illustrate
+           the structure of any molecule.</p>
+      </div>
+      <div class="project business">
+        <h2><a href="https://itunes.apple.com/us/app/curves-grapher-graphing-calculator/id492317052?mt=8">Curves</a></h2>
+        <p>I sold a graphing app to thousands of iPad users across the nation. I
+           designed and implemented all functionality.</p>
+      </div>
+      <div class="project business">
+        <h2><a href="https://itunes.apple.com/us/app/bhstudent/id763152364?mt=8">BHUploaders</a></h2>
+        <p>After talking to a sample of schools, I designed an iPad app to
+           solve the many problems which they had encountered with their existing
+           software and then marketed it to schools across the nation.</p>
+      </div>
+      <div class="project business">
+        <h2><a href="http://practicegigs.com">PracticeGigs</a></h2>
+        <p>I cofounded a tech startup to provide athletes with peer-based learning.
+           I contributed to vision and managed a team of developers</p>
+      </div>
+      <div class="project dev">
+        <h2><a href="http://surg.co">Surg.co</a></h2>
+        <p>I made a webapp for drag-and-drop file transfer across the internet to
+           allow anyone to bypass the inconveniences of email and flashdrives.</p>
+      </div>
+      <div class="project research">
+        <h2><a href="/articles/rubik.pdf">Deriving Rubik's Cube Methodology</a></h2>
+        <p>I attempted to derive tactics for solving a Rubik's cube by first analyzing
+           the nature of cube moves and then exploring these interactions through the 
+           lens of group theory.</p>
+      </div>
+      <div class="project writing">
+        <h2><a href="/articles/interpret.pdf">Verification of an Interpreter</a></h2>
+        <p>To illustrate the interesting ideas involved in programming languages, I
+           designed and implemented a super simple language in high school algebra
+           and then proved its implementation correct.</p>
+      </div>
+      <div class="project writing">
+        <h2><a href="/Tarpits-Abstraction">Tarpits &amp; Abstraction</a></h2>
+        <p>I wrote a book exploring computation from first principles, from the formulation
+           of posulates to the simulation, interpretation, and self-hosting of a
+           common programming language.</p>
+      </div>
+      <div class="project writing">
+        <h2><a href="http://blog.mattneary.com">Blog</a></h2>
+        <p>I started a blog to hold any essays I might write about ideas,
+           aesthetics, or human nature.</p>
       </div>
     </div>
-    <div id="footer">
-      <div class="wrapper">
-        <div>
-	  <h3>© 2014 Matt Neary</h3>
-	  <p>Hosted with Github Pages.</p>
-	</div>
-      </div>
-    </div>
-    <script>
-      (function(i,s,o,g,r,a,m){
-        i['GoogleAnalyticsObject'] = r;
-	i[r] = i[r] || function(){
-	  (i[r].q=i[r].q||[]).push(arguments)
-	}, i[r].l = 1*new Date();
-	a = s.createElement(o),
-	m = s.getElementsByTagName(o)[0];
-	a.async = 1;
-	a.src = g;
-	m.parentNode.insertBefore(a,m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-      ga('create', 'UA-49154204-1', 'mattneary.com');
-      ga('send', 'pageview');
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="isotope.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
+
