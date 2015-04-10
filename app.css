@@ -89,19 +89,19 @@ ul.links:last-child li:last-child:after {
 
 li.writing   { background: #E80C01; }
 .writing h2 { background: #E80C01;  color: white; }
-.writing:hover h2  { color: #E80C01; border-bottom: 3px solid #E80C01; }
+.writing.open h2  { color: #E80C01; border-bottom: 3px solid #E80C01; }
 li.research  { background: #2C52A0; }
 .research h2 { background: #2C52A0;  color: white;}
-.research:hover h2 { color: #2C52A0;  border-bottom: 3px solid #2C52A0;}
+.research.open h2 { color: #2C52A0;  border-bottom: 3px solid #2C52A0;}
 li.dev       { background: #F24500; }
 .dev h2 { background: #F24500;  color: white;}
-.dev:hover h2      { color: #F24500;  border-bottom: 3px solid #F24500;}
+.dev.open h2      { color: #F24500;  border-bottom: 3px solid #F24500;}
 li.business  { background: #008C88; }
 .business h2 { background: #008C88;  color: white;}
-.business:hover h2 { color: #008C88;  border-bottom: 3px solid #008C88;}
+.business.open h2 { color: #008C88;  border-bottom: 3px solid #008C88;}
 li.art       { background: #46C764; }
 .art h2 { background: #46C764;  color: white;}
-.art:hover h2      { color: #46C764;  border-bottom: 3px solid #46C764;}
+.art.open h2      { color: #46C764;  border-bottom: 3px solid #46C764;}
 
 
 #projects {
@@ -124,6 +124,7 @@ li.art       { background: #46C764; }
   width: 300px;
   margin-right: 6px;
   margin-bottom: 6px;
+  -webkit-backface-visibility: hidden;
 }
 .project h2 {
   position: absolute;
@@ -132,7 +133,7 @@ li.art       { background: #46C764; }
   top: 0;
   text-align: center;
   box-sizing: border-box;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   color: white;
   margin: 0;
   transition: padding ease 0.2s;
@@ -141,19 +142,19 @@ li.art       { background: #46C764; }
   box-sizing: border-box;
   padding: 10px;
 }
-.project:hover {
+.project.open {
   padding: 0;
 }
-.project:hover h2 {
+.project.open h2 {
   position: relative;
   background: none;
   padding: 0;
 }
-.project:hover p {
+.project.open p {
   padding: 0;
 }
-.project {
-  padding-bottom: 42px;
+.project p {
+  margin-bottom: 42px;
 }
 .project h2 a {
   color: inherit;
@@ -167,7 +168,7 @@ li.art       { background: #46C764; }
 @media (max-width: 715px) {
   .project {
     width: 100%;
-    margin: 0;
+    margin-right: 0;
   }
   #me {
     width: 100%;

@@ -17,6 +17,22 @@ $("nav a").click(function (evt) {
     $("#projects").isotope({ filter: $(this).attr('href').replace(/^#/, '.') });
   }
 });
+$(".project").hover(function (evt) {
+  $(this).addClass('open');
+}, function (evt) {
+  $(this).removeClass('open');
+});
+$(".project").click(function (evt) {
+  if ($(this).is('.init')) {
+    $(this).toggleClass('open');
+  } else {
+    $(this).addClass('open');
+    $(this).addClass('init');
+  }
+});
+$(".project a").click(function (evt) {
+  evt.stopPropagation();
+});
 
 (function(i,s,o,g,r,a,m){
   i['GoogleAnalyticsObject'] = r;
