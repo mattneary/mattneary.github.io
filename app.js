@@ -1,7 +1,11 @@
 $("#projects").isotope({
-  itemSelector: '.project', masonry: { columnWidth: $('.project')[0] },
+  itemSelector: '.project', masonry: { isFitWidth: true },
   getSortData: { name: 'a' },
   sortBy: 'name'
+});
+$("#show-collection, header .name a").click(function (evt) {
+  evt.preventDefault();
+  $('html, body').toggleClass('simple');
 });
 $("nav a").click(function (evt) {
   evt.preventDefault();

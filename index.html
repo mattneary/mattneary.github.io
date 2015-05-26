@@ -4,30 +4,43 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="isotope-animate.css" />
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1">
     <title>Matt Neary</title>
   </head>
-  <body>
+  <body class="simple">
+    <div id="all-content">
     <div id="me">
-      <header>
-        <span class="name">Matt Neary</span>
-        <div class="bio">
-          I'm a student exploring the world through projects.
-          <p id="find-me-p">View my</p>
-          <ul class="links">
-            <li><a href="http://github.com/mattneary">github</a></li>
-            <li><a href="http://blog.mattneary.com">blog</a></li>
-            <li><a href="/CV.pdf">CV</a></li>
-          </ul>
-          and
-          <p id="contact-p">contact me by</p>
-          <ul class="links">
-            <li><a href="tel:1-614-440-8217">phone</a></li>
-            <li><a href="mailto:neary.matt@gmail.com">email</a></li>
-          </ul>
+      <div class="wrapper">
+        <header>
+          <span class="name"><a href="#">Matt Neary</a></span>
+          <div class="bio">
+            <span id="tagline">A collector of <ul class="first">
+              <li>beautiful</li>
+              <li>cool</li>
+              <li>strange</li>
+            </ul> ideas.</span>
+            <div id="me-details">
+              <p id="find-me-p">View his</p>
+              <ul class="links">
+                <li><a href="http://github.com/mattneary">github</a></li>
+                <li><a href="http://blog.mattneary.com">blog</a></li>
+                <li><a href="/CV.pdf">CV</a></li>
+              </ul>
+              and
+              <p id="contact-p">contact him by</p>
+              <ul class="links">
+                <li><a href="tel:1-614-440-8217">phone</a></li>
+                <li><a href="mailto:neary.matt@gmail.com">email</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div id="nav-alt">
+          <button id="show-collection">Browse His Projects</button>
         </div>
-      </header>
+      </div>
       <nav>
         <span id="slider"></span>
         <ul class="skills">
@@ -140,6 +153,7 @@
     <script src="jquery.js"></script>
     <script src="isotope.js"></script>
     <script src="app.js"></script>
+  </div>
   </body>
 </html>
 
