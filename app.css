@@ -62,6 +62,9 @@ body:not(.simple) #me header > *:not(.name) {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
+#tagline.hidden {
+  display: none;
+}
 #me-details, #tagline {
   box-sizing: border-box;
   padding-left: 10px;
