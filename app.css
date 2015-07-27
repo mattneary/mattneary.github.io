@@ -51,7 +51,6 @@ body:not(.simple) #me header > *:not(.name) {
   height: 100px;
   position: absolute;
   box-sizing: border-box;
-  transition: all ease 0.5s;
 }
 #tagline {
   font-size: 1.5em;

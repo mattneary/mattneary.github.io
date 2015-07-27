@@ -3,9 +3,23 @@ $("#projects").isotope({
   getSortData: { name: 'a' },
   sortBy: 'name'
 });
+function repositionName() {
+  var isSimple = $('body').is('.simple') || $('header .name').css('position') == 'relative';
+  if (!isSimple) {
+    $('header .name a').text('x');
+    $('header .name a').css('padding-left', $('#projects').css('margin-left'));
+  } else {
+    $('header .name a').text('Matt Neary');
+    $('header .name a').css('padding-left', 0);
+  }
+}
 $("#show-collection, header .name a").click(function (evt) {
   evt.preventDefault();
   $('html, body').toggleClass('simple');
+  repositionName();
+});
+$(window).resize(function () {
+  repositionName();
 });
 $("nav a").click(function (evt) {
   evt.preventDefault();
@@ -20,6 +34,7 @@ $("nav a").click(function (evt) {
     li.addClass('active');
     $("#projects").isotope({ filter: $(this).attr('href').replace(/^#/, '.') });
   }
+  repositionName();
 });
 $(".project").hover(function (evt) {
   $(this).addClass('open');
