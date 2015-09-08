@@ -6,6 +6,7 @@ body {
 }
 body.simple {
   height: 100%;
+  overflow: hidden;
 }
 body.simple #all-content {
   height: 100%;
