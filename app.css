@@ -115,6 +115,7 @@ ul.links:last-child li:last-child:after {
 @media (max-width: 900px) {
   .wrapper {
     width: 100%;
+    padding: 10px 0;
   }
   #me {
     margin: 0;
