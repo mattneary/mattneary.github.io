@@ -110,6 +110,7 @@ ul.links:last-child li:last-child:after {
   padding: 6px;
   width: 100%;
   margin: 0;
+  font-size: 17px;
 }
 
 @media (max-width: 900px) {
