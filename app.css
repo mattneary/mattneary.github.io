@@ -2,6 +2,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  background: url(images/bg.jpg);
 }
 header .name a {
   text-decoration: none;
@@ -73,10 +74,24 @@ ul.links li:nth-last-child(2):after {
 ul.links:last-child li:last-child:after {
   content: ".";
 }
+.me-projects {
+  margin-top: 30px;
+}
+.label {
+  font-size: 30px;
+  color: gray;
+  margin-bottom: 10px;
+  display: block;
+}
+.label::after {
+  content: ']';
+}
+.label::before {
+  content: '[';
+}
 .projects {
   font-size: 15px;
   line-height: 15px;
-  margin-top: 30px;
   flex-wrap: wrap;
   display: flex;
 }
@@ -123,6 +138,9 @@ ul.links:last-child li:last-child:after {
     margin: 0;
     box-sizing: border-box;
     padding: 10px;
+  }
+  body {
+    background: none;
   }
 }
 
