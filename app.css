@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(images/bg.jpg);
+  background-size: cover;
 }
 header .name a {
   text-decoration: none;
