@@ -33,7 +33,7 @@ header {
   line-height: 40px;
   color: #14272B;
 }
-.bio {
+.quotes, .bio {
   width: 400px;
 }
 .name, .bio {
