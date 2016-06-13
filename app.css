@@ -16,11 +16,7 @@ header {
   font-size: 44px;
 }
 .number {
-  font-family: 'Kaushan Script';
-  font-size: 1.3em;
-  display: inline-block;
-  width: 0.8em;
-  text-align: center;
+  font-family: 'Merienda';
 }
 #me {
   margin-top: 100px;
