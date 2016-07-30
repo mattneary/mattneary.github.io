@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background: #1D1E1F;
+  background: #4c4c4c;
 }
 header {
   width: 100%;
@@ -18,8 +18,8 @@ header {
   margin-bottom: 100px;
   width: 100%;
   background: white;
-  border: 1px solid #a9531e;
-  border-width: 20px 0;
+  border: 1px solid black;
+  border-width: 1px 0;
 }
 .wrapper {
   width: 900px;
@@ -32,7 +32,7 @@ header {
 #me {
   font-size: 30px;
   line-height: 40px;
-  color: #14272B;
+  color: black;
 }
 .quotes, .bio {
   width: 400px;
@@ -50,7 +50,7 @@ header {
   padding: 0 0.2em;
 }
 #me .above-fold a:hover {
-  background: #1D1E1F;
+  background: #a9531e;
 }
 #find-me-p, #contact-p {
   display: inline;
@@ -126,10 +126,10 @@ ul.links:last-child li:last-child:after {
   padding: 6px;
 }
 .project:hover {
-  border-color: #1D1E1F;
+  border-color: #a9531e;
 }
 #me .project:hover a {
-  background: #1D1E1F;
+  background: #a9531e;
 }
 .project p {
   box-sizing: border-box;
@@ -149,6 +149,7 @@ ul.links:last-child li:last-child:after {
     margin: 0;
     box-sizing: border-box;
     padding: 10px;
+    border: none;
   }
   body {
     background: none;
