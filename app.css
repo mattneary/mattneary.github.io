@@ -156,7 +156,7 @@ ul.links:last-child li:last-child:after {
 }
 
 @media (max-width: 400px) {
-  .bio {
+  .quotes, .bio {
     width: 100%;
   }
 }
