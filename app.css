@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background: #4c4c4c;
+  background: white;
 }
 header {
   width: 100%;
@@ -14,12 +14,7 @@ header {
   font-family: 'Merienda';
 }
 #me {
-  margin-top: 100px;
-  margin-bottom: 100px;
   width: 100%;
-  background: white;
-  border: 1px solid black;
-  border-width: 1px 0;
 }
 .wrapper {
   width: 900px;
