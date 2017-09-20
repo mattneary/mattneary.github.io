@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: Cambo, sans-serif;
   margin: 0;
   padding: 0;
   background: white;
@@ -9,13 +9,13 @@ article {
   width: 800px;
   margin: auto;
   box-sizing: border-box;
-  padding: 50px 80px;
+  padding: 30px 50px;
 }
 
 header {
   font-size: 32px;
   background: black;
-  padding: 10px 30px;
+  padding: 10px 20px;
   line-height: 60px;
   vertical-align: middle;
   display: flex;
