@@ -53,6 +53,7 @@ article a {
   text-decoration: none;
   padding: 2px;
   color: black;
+  white-space: nowrap;
 }
 
 article a:after {
