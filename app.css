@@ -12,9 +12,13 @@ article, .inner-content {
   padding: 20px 30px;
 }
 
+article {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 header {
   font-size: 32px;
-  background: #222;
   line-height: 60px;
   vertical-align: middle;
   display: flex;
@@ -25,7 +29,6 @@ header {
 
 header .name {
   font-size: 1.5em;
-  color: white;
   min-width: 240px;
 }
 
@@ -40,7 +43,7 @@ header .separator, header .section-name {
 
 article .title {
   font-weight: bold;
-  margin-right: 1em;
+  margin-right: 0.5em;
   color: black;
 }
 
@@ -62,9 +65,33 @@ article a:after {
   font-size: 0.7em;
 }
 
-article a:hover {
-  background: #136486;
-  color: white;
+article a.words:after {
+  content: '💬';
+}
+
+article a.code:after {
+  content: '🤓';
+}
+
+article a.photos:after {
+  content: '📸';
+}
+
+
+article a.rose:after {
+  content: '🌹';
+}
+
+article a.chart:after {
+  content: '📈';
+}
+
+article a.acquisition:after {
+  content: '💰';
+}
+
+article a:hover:after {
+  content: '🌐';
 }
 
 @media (max-width: 900px) {
