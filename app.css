@@ -90,6 +90,10 @@ article a.acquisition:after {
   content: '💰';
 }
 
+article a.compass:after {
+  content: '🧭';
+}
+
 article a:hover:after {
   content: '🌐';
 }
