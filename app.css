@@ -121,6 +121,10 @@ article a.compass:after {
   content: '🆕';
 }
 
+article a.books:after {
+  content: '📚';
+}
+
 @media (max-width: 900px) {
   article, .inner-content {
     width: 100%;
