@@ -14,28 +14,53 @@
     <article>
       <div class="description">
 
-        Find me on
-          <a class="words" href="http://twitter.com/_mattneary">Twitter</a>,
-          <a class="code" href="http://github.com/mattneary">Github</a>, and
-          <a class="photos" href="http://instagram.com/matt.neary">Instagram</a>.
+        <div class="row">
+          <div  class="links grow">
+            <a class="words" href="http://twitter.com/_mattneary">Twitter</a><br/>
+            <a class="code" href="http://github.com/mattneary">Github</a><br/>
+              <a class="photos" href="http://instagram.com/matt.neary">Instagram</a>
+          </div>
+          <div  class="canvas"></div>
+          <div  class="links grow right">
+            <a href="https://observablehq.com/@mattneary">Observable</a><br/>
+            <a href="http://blog.mattneary.com">Blog</a>
+          </div>
+        </div>
         
-        <br /> <br />
 
-        <span class="title">About me.</span> I work as a Decision Scientist at
-        <a class="compass" href="https://www.faralloncapital.com">Farallon Capital</a>
-        in San Francisco. In 2019, I graduated from Harvard with
-        an honors degree in History &amp; Science, focusing on Technology,
-        Information, and Society. My senior year I wrote a thesis on Ted Nelson's
-        <a class="rose" href="https://en.wikipedia.org/wiki/Project_Xanadu">Project Xanadu</a>
-        titled "Xanadu: A Literary Dream for the Computer Age." Before that,
-        I worked for more than three years as a Software Engineer at a fin-tech company called
-        <a class="chart" href="http://kensho.com">Kensho</a>, watching the company grow from the
-        early days to
-        <a class="acquisition" href="https://www.forbes.com/sites/antoinegara/2018/03/06/wall-street-tech-spree-with-kensho-acquisition-sp-global-makes-largest-a-i-deal-in-history/#7911811c67b8">acquisition</a>.
-      
+        <p>I work as a Decision Scientist at <a class="compass" href="https://www.faralloncapital.com">Farallon Capital</a> in San Francisco.</p>
+
+
+        <p>In 2019, I graduated from Harvard with an honors degree in History &amp; Science.</p>
+
+
+        <p>My senior year I wrote a thesis on Ted Nelson's <a class="xanadu" href="https://en.wikipedia.org/wiki/Project_Xanadu">Project Xanadu</a> titled &#8220;Xanadu: A Literary Dream for the Computer Age.&#8221;</p>
+
+
+        <p>Before that, I worked for more than three years as a Software Engineer at a startup called <a class="chart" href="http://kensho.com">Kensho</a>, watching the company grow from the early days to acquisition.</p>
+
       </div>
 
     </article>
+    <script>
+      const start = new Date().getTime()
+      const canvas = document.querySelector('.canvas')
+      const draw = () => {
+        const diff = new Date().getTime() - start
+        const fraction = (diff % 20e3) / 20e3
+        const bounce = (fraction  > 0.5 ?  (1 - fraction) : fraction) * 2
+        document.body.style = `background-color: hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%);`
+        canvas.style = `
+          background: radial-gradient(
+            farthest-corner  at center,
+            hsl(${(360 + 17 - 360*fraction)%360}, 75%, 76%) 0,
+            hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%) ${(bounce*75) % 75}%
+          );
+        `;
+        requestAnimationFrame(draw)
+      }
+      draw()
+    </script>
   </body>
 </html>
 

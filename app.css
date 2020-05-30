@@ -5,6 +5,37 @@ body {
   background: white;
 }
 
+.canvas {
+  width: 90px;
+  margin: auto;
+  height:  90px;
+  border-radius: 45px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+article {
+  color: #222;
+}
+
+.row .grow {
+  flex: 1 1;
+}
+
+.links {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.links.right {
+  text-align: right;
+}
+
 article, .inner-content {
   width: 800px;
   margin: auto;
@@ -18,6 +49,7 @@ article {
 }
 
 header {
+  text-align: center;
   font-size: 32px;
   line-height: 60px;
   vertical-align: middle;
@@ -44,18 +76,9 @@ header .separator, header .section-name {
 article .title {
   font-weight: bold;
   margin-right: 0.5em;
-  color: black;
-}
-
-article .description {
-  color: #222;
 }
 
 article a {
-  font-weight: bold;
-  text-decoration: none;
-  padding: 2px;
-  color: black;
   white-space: nowrap;
 }
 
@@ -63,6 +86,8 @@ article a:after {
   content: '🌍';
   margin-left: 4px;
   font-size: 0.7em;
+  text-decoration: none;
+  display:inline-block;
 }
 
 article a.words:after {
@@ -78,12 +103,12 @@ article a.photos:after {
 }
 
 
-article a.rose:after {
-  content: '🌹';
+article a.xanadu:after {
+  content: '⏳';
 }
 
 article a.chart:after {
-  content: '📈';
+  content: '🔙';
 }
 
 article a.acquisition:after {
@@ -91,11 +116,7 @@ article a.acquisition:after {
 }
 
 article a.compass:after {
-  content: '🧭';
-}
-
-article a:hover:after {
-  content: '🌐';
+  content: '🆕';
 }
 
 @media (max-width: 900px) {
