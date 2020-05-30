@@ -45,6 +45,12 @@
     <script>
       const start = new Date().getTime()
       const canvas = document.querySelector('.canvas')
+      let show = true
+      canvas.addEventListener('click', () => {
+        if (show) document.body.className = 'hideText'
+        else document.body.className = ''
+        show = !show
+      })
       const draw = () => {
         const diff = new Date().getTime() - start
         const fraction = (diff % 20e3) / 20e3
