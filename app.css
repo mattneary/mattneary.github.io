@@ -20,7 +20,7 @@ body.hideText {
 .row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -47,6 +47,7 @@ article, .inner-content {
 article {
   padding-top: 0;
   padding-bottom: 0;
+  margin-top: 20px;
 }
 
 header {
@@ -64,6 +65,7 @@ header {
 header .name {
   font-size: 1.5em;
   min-width: 240px;
+  text-transform: uppercase;
 }
 
 header .separator {
