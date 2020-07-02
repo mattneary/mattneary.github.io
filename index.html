@@ -40,12 +40,17 @@
         <p>Before that, I worked for more than three years as a Software Engineer at a startup called <a class="chart" href="http://kensho.com">Kensho</a>, watching the company grow from the early days to acquisition</p>
 
       </div>
-
+      <div class='modeSwitch'>Just the glowing orb, please.</div>
     </article>
     <script>
       const start = new Date().getTime()
       const canvas = document.querySelector('.canvas')
+      const modeSwitch = document.querySelector('.modeSwitch')
       let show = true
+      modeSwitch.addEventListener('click', () => {
+        document.body.className = 'hideText'
+        show = false
+      })
       canvas.addEventListener('click', () => {
         if (show) document.body.className = 'hideText'
         else document.body.className = ''

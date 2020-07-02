@@ -9,6 +9,24 @@ body {
 body.hideText {
   color: rgba(0,0,0,0);
 }
+body.hideText a, body.hideText header, body.hideText .modeSwitch {
+  color: rgba(0,0,0,0);
+}
+.modeSwitch {
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 0;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+article, article > .modeSwitch {
+  background: inherit;
+}
 
 .canvas {
   width: 90px;
@@ -48,6 +66,7 @@ article {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 header {
