@@ -107,47 +107,16 @@ article a {
   white-space: nowrap;
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 article a:after {
-  content: '🌍';
-  margin-left: 4px;
+  content: '🌐';
+  margin-left: 2px;
   font-size: 0.7em;
+  line-height: 1em;
   text-decoration: none;
   display:inline-block;
-}
-
-article a.words:after {
-  content: '💬';
-}
-
-article a.code:after {
-  content: '🤓';
-}
-
-article a.photos:after {
-  content: '📸';
-}
-
-
-article a.xanadu:after {
-  content: '⏳';
-}
-
-article a.chart:after {
-  content: '🔙';
-}
-
-article a.acquisition:after {
-  content: '💰';
-}
-
-article a.compass:after {
-  content: '🆕';
-}
-
-article a.books:after {
-  content: '📚';
 }
 
 @media (max-width: 900px) {
