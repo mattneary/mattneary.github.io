@@ -56,12 +56,16 @@
         const diff = new Date().getTime() - start
         const fraction = (diff % 20e3) / 20e3
         const bounce = (fraction  > 0.5 ?  (1 - fraction) : fraction) * 2
-        document.body.style = `background-color: hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%);`
+
+        const hbg = (360 + 220 - 360*bounce)%360
+        const hfg = (360 - 180*bounce)%360
+
+        document.body.style = `background-color: white;`
         canvas.style = `
           background: radial-gradient(
             farthest-corner  at center,
-            hsl(${(360 + 17 - 360*fraction)%360}, 75%, 76%) 0,
-            hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%) ${(bounce*75) % 75}%
+            hsl(${hfg}, 75%, 76%) 0,
+            white ${(bounce*75) % 75}%
           );
         `;
         requestAnimationFrame(draw)
