@@ -25,28 +25,12 @@
           </div>
         </div>
         
-        <p>I work as a Decision Scientist at a hedge fund in San Francisco, California.</p>
-
-        <p>In 2019 I graduated from Harvard with an honors degree in <a href="https://histsci.fas.harvard.edu/technology-information-society-track">History &amp; Science</a></p>
-
-
-        <p>My senior year I wrote a thesis on Ted Nelson's <a href="https://en.wikipedia.org/wiki/Project_Xanadu">Project Xanadu</a> titled &#8220;Xanadu: A Literary Dream for the Computer Age.&#8221; Apple cofounder Steve Wozniak called it &#8220;incredible.&#8221;</p>
-
-
-        <p>Before that, I worked for more than three years as a Software Engineer at a startup called <a href="http://kensho.com">Kensho</a>. Ultimately, we were acquired in what Forbes called the &#8220;Largest A.I. Deal in History.&#8221;</p>
-
       </div>
-      <div class='modeSwitch'>Just the glowing orb, please.</div>
     </article>
     <script>
       const start = new Date().getTime()
       const canvas = document.querySelector('.canvas')
-      const modeSwitch = document.querySelector('.modeSwitch')
       let show = true
-      modeSwitch.addEventListener('click', () => {
-        document.body.className = 'hideText'
-        show = false
-      })
       canvas.addEventListener('click', () => {
         if (show) document.body.className = 'hideText'
         else document.body.className = ''
@@ -56,16 +40,12 @@
         const diff = new Date().getTime() - start
         const fraction = (diff % 20e3) / 20e3
         const bounce = (fraction  > 0.5 ?  (1 - fraction) : fraction) * 2
-
-        const hbg = (360 + 220 - 360*bounce)%360
-        const hfg = (360 - 180*bounce)%360
-
-        document.body.style = `background-color: white;`
+        document.body.style = `background-color: hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%);`
         canvas.style = `
           background: radial-gradient(
             farthest-corner  at center,
-            hsl(${hfg}, 75%, 76%) 0,
-            white ${(bounce*75) % 75}%
+            hsl(${(360 + 17 - 360*fraction)%360}, 75%, 76%) 0,
+            hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%) ${(bounce*75) % 75}%
           );
         `;
         requestAnimationFrame(draw)
