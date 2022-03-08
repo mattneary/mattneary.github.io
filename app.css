@@ -83,10 +83,10 @@ header {
 }
 
 header .name {
+  font-family: 'Times', 'Times New Roman', serif;
   font-size: 1.5em;
   min-width: 240px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 header .separator {
@@ -117,6 +117,10 @@ article a:after {
   line-height: 1em;
   text-decoration: none;
   display:inline-block;
+}
+
+article a.code:after {
+  content: '🧩';
 }
 
 @media (max-width: 900px) {
