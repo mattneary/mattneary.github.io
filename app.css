@@ -51,6 +51,7 @@ article, article > .modeSwitch {
   text-align: left;
   display: flex;
   flex-direction: column;
+  gap: 0.8em;
 }
 .links.right {
   text-align: right;
