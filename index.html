@@ -12,56 +12,44 @@
       <span class="name inner-content">Matt Neary</span>
     </header>
     <article>
-      <div class="description">
-
-        <div class="row">
-          <div  class="links grow">
-            <a href="http://twitter.com/_mattneary">Twitter</a>
-            <a href="http://blog.mattneary.com">Blog</a>
-            <a href="http://github.com/mattneary">Github</a>
-            <a href="https://observablehq.com/@mattneary?tab=notebooks">Observable</a>
-          </div>
-          <div class="canvas"></div>
-          <div class="links grow right">
-          </div>
-        </div>
-        
-        <p>Building <a href="http://magicpaper.ai">Magic Paper</a></p>
-
-        <p>Most recently, I worked as a Decision Scientist at a hedge fund in San Francisco.</p>
-
-        <p>In 2019 I graduated from Harvard with bachelor's degree in History &amp; Science</p>
-
-        <p>My senior year I wrote a thesis on Ted Nelson's Project Xanadu titled &#8220;Xanadu: A Literary Dream for the Computer Age.&#8221; Apple cofounder Steve Wozniak called it &#8220;incredible.&#8221;</p>
-
-        <p>Before that, I worked as a Software Engineer at <a href="http://kensho.com">Kensho</a>. Ultimately, we were acquired in what Forbes called the &#8220;Largest A.I. Deal in History.&#8221;</p>
+      <div class="block">
+        <h2>Work</h2>
+        <ul>
+          <li>Member of Technical Staff, Norm.AI</li>
+          <li>Decision Scientist, Farallon Capital</li>
+          <li>Software Engineer, Kensho Technologies</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>Writing</h2>
+        <ul>
+          <li>
+            <a href="/flood.pdf" class="attachment">Surviving the Flood</a>, 2023
+            <div class="blurb">Featured in <a href="https://futuretextpublishing.com/vol4/">The Future of Text IV</a></div>
+          </li>
+          <li><a href="http://blog.mattneary.com/the-death-of-the-author">Death of the Author</a>, 2023</li>
+          <li><a href="http://blog.mattneary.com/worse-is-better">Worse Is Better</a>, 2023</li>
+          <li>
+            <a href="/irr.pdf" class="attachment">IRR of Random Variables</a>, 2022
+            <div class="blurb">Formulation of IRR when cashflows are random variables</div>
+          </li>
+          <li><a href="http://blog.mattneary.com/instafamous">Instafamous</a>, 2020</li>
+          <li><a href="http://blog.mattneary.com/why-race-into-space">Why Race into Space?</a>, 2023</li>
+          <li>
+            <a href="/xanadu.pdf" class="attachment">Xanadu: A Literary Dream for the Computer Age</a>, 2019
+            <div class="blurb">Senior thesis on some of the earliest visions for personal computing</div>
+          </li>
+          <li>
+            <a href="/melody.pdf" class="attachment">Melody: Function-Oriented Navigation of a Fileless Codebase in Unison</a>, 2019
+            <div class="blurb">Research paper completed for Harvard CS279/CS252</div>
+          </li>
+          <li>
+            <a href="/tarpits.pdf" class="attachment">Tarpits &amp; Abstraction</a>, 2013
+            <div class="blurb">Self-published book on programming languages from first principles</div>
+          </li>
+        </ul>
       </div>
     </article>
-    <script>
-      const start = new Date().getTime()
-      const canvas = document.querySelector('.canvas')
-      let show = true
-      /*canvas.addEventListener('click', () => {
-        if (show) document.body.className = 'hideText'
-        else document.body.className = ''
-        show = !show
-      })*/
-      const draw = () => {
-        const diff = new Date().getTime() - start
-        const fraction = (diff % 20e3) / 20e3
-        const bounce = (fraction  > 0.5 ?  (1 - fraction) : fraction) * 2
-        document.body.style = `background-color: hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%);`
-        canvas.style = `
-          background: radial-gradient(
-            farthest-corner  at center,
-            hsl(${(360 + 17 - 360*fraction)%360}, 75%, 76%) 0,
-            hsl(${(360 + 220 - 360*fraction)%360}, 75%, 76%) ${(bounce*75) % 75}%
-          );
-        `;
-        requestAnimationFrame(draw)
-      }
-      draw()
-    </script>
   </body>
 </html>
 
