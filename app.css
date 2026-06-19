@@ -1,10 +1,11 @@
 body {
-  font-family: Helvetica;
+  font-family: "Times New Roman", serif;
   margin: 0;
   padding: 0;
   padding-top: 20px;
   background: white;
   color: #222;
+  font-size: 16px;
 }
 
 article, .inner-content {
@@ -42,9 +43,8 @@ header .name {
 article a {
   color: #222;
   text-decoration: none;
-  font-style: italic;
-  line-height: 1em;
-  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
 }
 
 article a:hover {
@@ -64,6 +64,7 @@ li {
 }
 
 h2 {
+  font-family: Helvetica, sans-serif;
   font-size: 1.2em;
   padding-left: 4px;
   margin: 0;
@@ -73,10 +74,7 @@ article a:after {
   content: '🌐';
   margin-left: 4px;
   font-size: 0.7em;
-  line-height: 1em;
-  vertical-align: middle;
   text-decoration: none;
-  display:inline-block;
 }
 
 article a.code:after {
