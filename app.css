@@ -43,7 +43,6 @@ header .name {
 article a {
   color: #222;
   text-decoration: none;
-  display: inline-flex;
   align-items: center;
 }
 
